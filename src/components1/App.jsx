@@ -1,7 +1,5 @@
-
-
 import React, { Component } from 'react'
-import NavBar from './NavBar1';
+import NavBar from './NavBar';
 import News from './News';
 
 import {
