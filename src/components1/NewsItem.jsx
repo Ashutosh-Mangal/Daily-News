@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl, author, publishedAt, source } =
+    let { title, description, imageUrl, newsUrl, author, date, source } =
       this.props;
     return (
       <div className="my-3">
@@ -34,7 +34,7 @@ export class NewsItem extends Component {
               <small className="text-danger">
                 {" "}
                 By {!author ? "unknown" : author} on{" "}
-                {new Date(publishedAt).toGMTString()}
+                {new Date(date).toGMTString()}
               </small>
             </p>
             <a
